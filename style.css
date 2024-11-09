@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+font-family: montserrat;
+}
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color:white;
+    color:  #fe5f01;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vmax 0vmax 1vmax 4vmax  ;
+
+}
+nav .left {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+}
+nav .left span {
+    color: black;
+}
+nav .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: thin;
+   margin-left: 30%
+}
+.signnow {
+    width:19% ;
+    background-color: #fe5f01;
+    color: white;
+    padding:10px 20px ;
+    border-radius: 25px;
+}
+main {
+    width: 45%;
+    color: white ;
+    margin-left: 4vmax;
+}
+main > :nth-child(1) {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    line-height: 55px;
+}
+main > :nth-child(2) {
+    font-size: 14px;
+    margin: 12px 0;
+    width: 80%;
+}
+main > :nth-child(3) {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+main button {
+    padding: 15px 25px ;
+    border-radius: 25px;
+    background-color: #fe5f01;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #fe5f01;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box {
+    /* background-color: aqua ; */
+    height: 80%;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+   
+   
+}
+.icon > img {
+    height: 4vmax;
+    width: 3vmax;
+    display: flex;
+}
+.set {
+    width: 15%;
+}
+.menu {
+    display: none;
+    margin-right: 3%;
+}
+.close {
+    display: none;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+.menu {
+    display: block;
+}
+
+    nav .right {
+display: none;
+    }
+    nav .left {
+        font-size: medium;
+    }
+    .div main h1 {
+        font-size: 2rem;
+        letter-spacing: normal;
+        width: 180%;
+        margin: auto;
+        text-align: center;
+    }
+    .div main p ,.div main h2 {
+        font-size: 10px;
+        width: 150%;
+        text-align: center;
+    }
+    .div main button {
+        margin-left: 55%;
+    }
+    .box {
+        width: 3vmax;
+        font-size: 10px;
+    }
+    .close {
+        display: none;
+    }
+}
